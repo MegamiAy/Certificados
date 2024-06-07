@@ -29,4 +29,12 @@ h1, h3 {
 main {
     align-content: center;
     max-width: 1000px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: '> ';
+    list-style-position: inside;
+    /* columns: 1; */
+    margin-left: 30px;
 }
