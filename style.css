@@ -23,8 +23,9 @@ header {
     padding: 10px;
 }
 
-h1, h3 {
+header > h1, h4 {
     text-align: center;
+
 }
 
 h2 {
