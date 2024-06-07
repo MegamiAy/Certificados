@@ -1,3 +1,13 @@
+/* Typical Device Breakpoints
+
+small screens: 600px max
+cellphone: 600px -> 768px max
+tablet: 768px -> 992px max
+desktop: 992px -> 1200px
+big screens: up 1200px
+
+*/
+
 /* IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
 
@@ -15,7 +25,7 @@ body {
     background-color: #121212;
     font-family: Arial, Helvetica, sans-serif;
     font-family: var(--font);
-    color: white;
+    color: #fff;
 }
 
 header {
@@ -32,14 +42,29 @@ h2 {
     margin-top: 15px;
 }
 
-p {
+h5 {
+    color: #d5d5d5;
+}
+
+strong {
+    color: #5f9ea0;
+}
+
+.con {
     font-weight: bold;
 }
 
 main {
-    align-content: center;
     max-width: 1000px;
     margin: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.container > div {
+    width: 50%;
 }
 
 ul {
@@ -48,6 +73,70 @@ ul {
     margin-left: 30px;
 }
 
-#hob {
-    columns: 2;
+hr {
+    border: none;
+    border-top: 1px dashed cadetblue;
+    width: 88%;
+    margin: 25px auto;
 }
+
+@media screen and (min-width: 940px) and (max-width: 1000px) { 
+    
+    body {
+        align-content: center;
+    }
+
+    .container {
+        margin: 25px;
+        margin-top: 0;
+    }
+
+    .container > div {
+        width: 100%;
+
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 939px) { 
+
+    body {
+        align-content: center;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .container > div {
+        width: 100%;
+    }
+
+    main {
+        max-width: 700px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        display: block;
+        margin: 25px;
+    }
+
+    .container > div {
+        width: 100%;
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+ }
